@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 void main() => runApp(XylophoneApp());
 
 class XylophoneApp extends StatelessWidget {
-  int numNotes = 8;
-  List<MaterialColor> myColors = [
+  final int numNotes = 8;
+  final List<Color> myColors = [
     Colors.red,
     Colors.orange,
     Colors.yellow,
