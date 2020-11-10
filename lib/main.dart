@@ -15,9 +15,11 @@ class XylophoneApp extends StatelessWidget {
     Colors.deepPurple
   ];
 
+  static AudioCache player = AudioCache();
+  // https://pub.dev/packages/audioplayers#audiocache
+
   void playSound(int num) {
-    final player = AudioCache();
-    player.play('note$num.wav');
+    player.play('note$num.wav', volume: 0.67);
   }
 
   Widget buildKey(int note) {
